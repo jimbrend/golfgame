@@ -5,3 +5,4 @@ How the Program Works:
 4. Game Progress: The program keeps track of the total number of swings and the distance covered.
 5. Winning Condition: The game continues until the ball reaches or surpasses the hole distance.
 Feel free to modify the program to include more features like wind resistance, different clubs, or a par system!
+6. A vector for hole_position and ball_position were added as variables to act as vectors representing the positions of the hole and the ball, respectively.
