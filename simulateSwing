@@ -1,0 +1,25 @@
+import random
+
+def simulate_golf():
+    hole_distance = random.randint(400, 600)  # Distance to the hole in yards
+    print(f"The hole is {hole_distance} yards away.")
+    
+    swings = 0
+    current_distance = 0
+    
+    while current_distance < hole_distance:
+        power = int(input("Enter your swing power (1-10): "))
+        swing_distance = power * random.randint(10, 20)
+        current_distance += swing_distance
+        swings += 1
+        
+        print(f"Swing {swings}: You hit the ball {swing_distance} yards.")
+        
+        if current_distance >= hole_distance:
+            print(f"Congratulations! You got the ball in the hole in {swings} swings.")
+            break
+        else:
+            print(f"You are now {hole_distance - current_distance} yards from the hole.")
+
+if __name__ == "__main__":
+    simulate_golf()
